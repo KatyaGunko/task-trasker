@@ -1,0 +1,68 @@
+$icon-font-path: '/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/vendor/assets/stylesheets/bootstrap';
+$fa-font-path: '/assets/fonts/font-awesome/';
+@import '~font-awesome/scss/font-awesome';
+
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900|Roboto:300,500,700,900);
+
+/**
+ * App-wide Styles
+ */
+
+
+body {
+  //background: #2c3338;
+  background: #e0f0fd;
+  color: #606468;
+  margin: 0;
+  overflow-y:auto !important;
+  overflow-x:hidden !important;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+*:focus, *:active, *:hover {
+  outline: none;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.container {
+  z-index: 100;
+}
+
+// Component styles are injected through gulp
+/* inject:scss */
+@import 'main/main.scss';
+@import 'login/login.scss';
+@import '../components/cloudy-background/cloudy-background';
+/* endinject */

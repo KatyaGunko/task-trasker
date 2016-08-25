@@ -1,0 +1,38 @@
+<tt-cloudy></tt-cloudy>
+
+<div id="login">
+
+    <ng-form name="loginForm">
+
+        <fieldset class="clearfix">
+
+            <p>
+                <span class="fontawesome-envelope"></span>
+                <input type="email"
+                       placeholder="E-mail"
+                       ng-model="login.user.email"
+                       ng-model-options="{updateOn: 'default blur', debounce: {default: 300, blur: 0}}"
+                       required>
+            </p>
+            <p>
+                <span class="fontawesome-lock"></span>
+                <input type="password"
+                       placeholder="Password"
+                       ng-model="login.user.password"
+                       ng-model-options="{updateOn: 'default blur', debounce: {default: 300, blur: 0}}"
+                       ng-minlength="6"
+                       ng-maxlength="30"
+                       required></p>
+            <p>
+                <input type="submit"
+                       value="Sign In"
+                       ng-click="login.user.login()">
+            </p>
+
+        </fieldset>
+
+    </ng-form>
+
+    <p>Not a member? <a href="#" class="blue">Sign up now</a><span class="fontawesome-arrow-right"></span></p>
+
+</div> <!-- end login -->

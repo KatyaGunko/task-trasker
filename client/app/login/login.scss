@@ -1,0 +1,66 @@
+/* ---------- LOGIN ---------- */
+#login {
+  width: 360px;
+  padding: 40px;
+  margin: 200px auto;
+  background: rgba(255, 255, 255, 0.43);
+}
+
+#login ng-form span {
+  background-color: rgba(2, 38, 80, 0.4);
+  border-radius: 3px 0px 0px 3px;
+  border-right: 1px solid #ccc;
+  color: #ffffff;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+
+#login ng-form input {
+  height: 50px;
+}
+
+#login ng-form input[type="email"], input[type="password"] {
+  background-color: rgba(2, 38, 80, 0.4);
+  border-radius: 0px 3px 3px 0px;
+  color: #fff;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 230px;
+
+  &::-webkit-input-placeholder {
+    color: #fff;
+  }
+}
+
+#login ng-form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #64ce85;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transng-form: uppercase;
+  width: 280px;
+}
+
+#login ng-form input[type="submit"]:hover {
+  background-color: #5faf78;
+}
+
+#login > p {
+  text-align: center;
+}
+
+#login > p span {
+  padding-left: 5px;
+}
+
+/*------------- VALIDATION ---------------*/
+input.ng-touched.ng-invalid {
+  color: rgba(193, 20, 20, 0.6) !important;
+}
